@@ -2,10 +2,9 @@
 tags: JavaScript 實戰班
 ---
 
-# 第七週 Vue Router、第八週 最終挑戰
+# 第八週 最終挑戰
 
-- 後台DEMO :[https://rockalen.github.io/js-training-week7/dist/#/login](https://rockalen.github.io/js-training-week7/dist/#/login)
-- 前台DEMO :[https://rockalen.github.io/js-training-week7/dist/#/](https://rockalen.github.io/js-training-week7/dist/#/)
+- 前台DEMO :[https://rockalen.github.io/js-training-week8/dist/#/](https://rockalen.github.io/js-training-week8/dist/#/)
 
 ### Router 運用方法
 
