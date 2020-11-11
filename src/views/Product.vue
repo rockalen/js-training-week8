@@ -13,13 +13,15 @@
             </div>
             <div class="col-12 col-md-5 position-absolute product-item-cart">
               <div class="card-body bg-white p-3 py-md-5 pr-md-0 pl-md-5">
-                  <nav aria-label="breadcrumb">
+                  <!-- <nav aria-label="breadcrumb">
                       <ol class="breadcrumb p-0 bg-transparent border-0 mb-2 mb-md-3">
                         <li class="breadcrumb-item"><a href="#">首頁</a></li>
                         <li class="breadcrumb-item"><a href="#">慢慢手做</a></li>
                         <li class="breadcrumb-item active" aria-current="page">全部</li>
                       </ol>
-                  </nav>
+                  </nav> -->
+                  <!-- 麵包屑模組 -->
+                  <Breadcrumb />
                   <h2 class="card-title font-size-md-48">{{tempProduct.title}}</h2>
                   <div class="d-flex flex-wrap">
                       <!-- quantity button -->
@@ -66,11 +68,13 @@
 </template>
 
 <script>
+import Breadcrumb from '@/components/Breadcrumb'
 import Carousel from '@/components/Frontend/Carousel'
 import CartsModal from '@/components/Frontend/CartsModal'
 export default {
   name: 'Product',
   components: {
+    Breadcrumb,
     Carousel,
     CartsModal
   },

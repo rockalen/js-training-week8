@@ -13,23 +13,59 @@ const routes = [
       {
         path: '',
         name: '首頁',
-        component: () => import('../views/Index.vue')
+        component: () => import('../views/Index.vue'),
+        meta: {
+          breadcrumb: [{
+            name: '首頁'
+          }]
+        }
       },
       {
         path: '/products',
         name: '產品列表',
-        component: () => import('../views/Products.vue')
+        component: () => import('../views/Products.vue'),
+        meta: {
+          breadcrumb: [{
+            name: '首頁',
+            link: '/'
+          },
+          {
+            name: '慢慢手做'
+          }]
+        }
       },
       {
         // 記得動態ID
         path: '/product/:id',
         name: '產品詳細頁',
-        component: () => import('../views/Product.vue')
+        component: () => import('../views/Product.vue'),
+        meta: {
+          breadcrumb: [{
+            name: '首頁',
+            link: '/'
+          },
+          {
+            name: '慢慢手做',
+            link: '/products'
+          },
+          {
+            name: '產品說明'
+          }]
+        }
       },
       {
         path: '/orders',
         name: '購物車',
-        component: () => import('../views/Orders.vue')
+        component: () => import('../views/Orders.vue'),
+        meta: {
+          breadcrumb: [{
+            name: '首頁',
+            link: 'home'
+          },
+          {
+            name: '購物車'
+          }]
+        }
       },
       {
         path: '/checkout',
@@ -38,11 +74,20 @@ const routes = [
       },
       {
         path: '/about',
-        name: '關於我們',
+        name: '手做理念',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        meta: {
+          breadcrumb: [{
+            name: '首頁',
+            link: '/'
+          },
+          {
+            name: '手做理念'
+          }]
+        }
       }
     ]
   },

@@ -47,47 +47,7 @@ Vue.config.productionTip = false
 // register VueAxios prototype
 Vue.use(VueAxios, axios)
 Vue.use(VueAwesomeSwiper)
-// , {
-//   slidesPerView: 4,
-//   spaceBetween: 16,
-//   slidesOffsetBefore: 89,
-//   breakpoints: {
-//     320: {
-//       slidesOffsetBefore: 15,
-//       slidesPerView: 1.45,
-//       spaceBetween: 16
-//     },
-//     480: {
-//       slidesOffsetBefore: 15,
-//       slidesPerView: 2,
-//       spaceBetween: 16
-//     },
-//     640: {
-//       slidesOffsetBefore: 15,
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     768: {
-//       slidesOffsetBefore: 60,
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1024: {
-//       slidesOffsetBefore: 80,
-//       slidesPerView: 3.5,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       slidesOffsetBefore: 89,
-//       slidesPerView: 4,
-//       spaceBetween: 30
-//     }
-//   }
-// })
-// Install BootstrapVue
-// Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-// Vue.use(IconsPlugin)
+
 Vue.component('Loading', Loading)
 // vee-validate
 Object.keys(rules).forEach((rule) => {
